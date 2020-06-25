@@ -1,7 +1,7 @@
 package tests;
 
 
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,13 +29,6 @@ public class LoginTest extends TestBase{
 		
 		loginObject = new LoginPage(driver);
 		loginObject.UserCanLogin(Email, Password);
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		AssertJUnit.assertTrue(loginObject.CompleteProfilePopup.isDisplayed());
-		System.out.println("User logged in successfuly and you can complete your profile");
-		
+	
 	}
 }

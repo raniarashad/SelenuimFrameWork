@@ -18,7 +18,7 @@ public class RegisterTest extends TestBase {
 	public static Object[][] UserDate_Valid ()
 	{
 		return new Object[][] {
-			{"Tamer" , "Roshdy" , "tamer2020@gmail.com", "Rania123456789"}};
+			{"Tamer" , "Roshdy" , "Rashadta@gmail.com", "Rasha123456789"}};
 			//{"Rania","Rashad", "rania.rashad2021@gmail.com", "Rania123456"}};
 	}
 
