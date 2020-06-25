@@ -39,6 +39,11 @@ public class RegisterTest extends TestBase {
 
 		RegisterObject = new RegisterPage(driver);
 		RegisterObject.UserCanMakeRegister(firstname, lastname, Email, Password);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		if (RegisterObject.RegisterSuccessMsg.isDisplayed())
 		{
 			System.out.println("User registered successfuly");
